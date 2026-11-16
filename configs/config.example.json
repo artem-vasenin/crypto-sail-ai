@@ -1,0 +1,12 @@
+{
+  "bybit_url": "https://api.bybit.com",
+  "llm_url": "http://127.0.0.1:8080",
+  "llm_model": "Qwen/Qwen3-8B-GGUF:Q4_K_M",
+  "database": "data/crypto-sail.db",
+  "max_ticker_age_seconds": 180,
+  "min_turnover_24h": 100000,
+  "max_spread_pct": 0.5,
+  "llm_timeout_seconds": 120,
+  "max_llm_batch": 10,
+  "paper_only": true
+}

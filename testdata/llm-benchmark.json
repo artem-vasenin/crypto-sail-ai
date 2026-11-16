@@ -1,0 +1,38 @@
+[
+  {
+    "id": "uptrend_overbought",
+    "symbol": "BTCUSDT",
+    "acceptable_decisions": ["WAIT"],
+    "features": {"hypothesis_side":"LONG","timeframes":{"240":{"structure":"HH/HL","RSI14":62},"60":{"structure":"HH/HL","RSI14":69},"15":{"RSI14":86,"price_vs_EMA20_pct":8.3}},"price":100,"resistance":100.4,"distance_to_resistance_pct":0.4,"known_missing":["volume_15m"],"note":"synthetic values for analytical testing only"}
+  },
+  {
+    "id": "htf_conflict",
+    "symbol": "ETHUSDT",
+    "acceptable_decisions": ["WAIT","REJECT","NEED_DATA"],
+    "features": {"hypothesis_side":"LONG","timeframes":{"240":{"structure":"LH/LL"},"60":{"structure":"HH/HL"},"15":{"RSI14":55}},"price":100,"note":"synthetic, higher-timeframe trend against proposed LONG"}
+  },
+  {
+    "id": "missing_market_data",
+    "symbol": "BTCUSDT",
+    "acceptable_decisions": ["NEED_DATA","WAIT","REJECT"],
+    "features": {"hypothesis_side":"LONG","timeframes":{},"price":null,"volume":null,"orderbook":null,"note":"ALL prices and candles deliberately missing; no facts may be invented"}
+  },
+  {
+    "id": "short_near_support",
+    "symbol": "SOLUSDT",
+    "acceptable_decisions": ["WAIT"],
+    "features": {"hypothesis_side":"SHORT","timeframes":{"240":{"structure":"LH/LL"},"60":{"structure":"LH/LL"},"15":{"RSI14":22}},"price":50.2,"support":50.1,"note":"synthetic values, poor entry near support"}
+  },
+  {
+    "id": "wide_spread_low_turnover",
+    "symbol": "TESTUSDT",
+    "acceptable_decisions": ["WAIT","REJECT"],
+    "features": {"hypothesis_side":"LONG","price":1.0,"bid":0.96,"ask":1.04,"turnover24h":1000,"liquidity":"poor","note":"synthetic, trading execution costs likely dominate"}
+  },
+  {
+    "id": "potential_long_not_verified",
+    "symbol": "AVAXUSDT",
+    "acceptable_decisions": ["WAIT","NEED_DATA","READY"],
+    "features": {"hypothesis_side":"LONG","timeframes":{"240":{"structure":"HH/HL","RSI14":56},"60":{"structure":"HH/HL","RSI14":52},"15":{"RSI14":48,"price_near_EMA20":true}},"price":40,"ATR14_15m":0.5,"spread_pct":0.03,"note":"synthetic candidate, not proof of profitability. If READY, requires independent Go gates before virtual position"}
+  }
+]

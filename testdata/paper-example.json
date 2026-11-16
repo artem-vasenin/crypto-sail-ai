@@ -1,0 +1,16 @@
+{
+  "symbol": "BTCUSDT",
+  "side": "LONG",
+  "entry_at": "2026-01-01T00:00:00Z",
+  "entry": 100,
+  "stop": 98,
+  "take": 105,
+  "qty": 1,
+  "atr": 0.7,
+  "bars": [
+    {"open_time":"2026-01-01T00:05:00Z","open":100.3,"high":101.2,"low":100.0,"close":101.0,"volume":10,"turnover":1000},
+    {"open_time":"2026-01-01T00:10:00Z","open":101.0,"high":102.5,"low":100.9,"close":102.2,"volume":10,"turnover":1010},
+    {"open_time":"2026-01-01T00:15:00Z","open":102.2,"high":104.0,"low":102.0,"close":103.8,"volume":12,"turnover":1200},
+    {"open_time":"2026-01-01T00:20:00Z","open":103.8,"high":105.2,"low":103.1,"close":104.7,"volume":12,"turnover":1200}
+  ]
+}

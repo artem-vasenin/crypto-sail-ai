@@ -1,0 +1,20 @@
+/data/
+/bin/
+*.db
+*.db-shm
+*.db-wal
+.env
+*.key
+*.log
+*.out
+.idea/
+.DS_Store
+# Temporary archives and rejected/partial patch artefacts
+*.zip
+*.patch
+*.rej
+*.orig
+*.sqlite
+*.sqlite3
+*.db-journal
+coverage.out
